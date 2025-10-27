@@ -6,7 +6,7 @@ int main(){
 	scanf("%d", &year);
 	printf("Nhap diem trung binh: ");
 	scanf("%f", &dtb);
-	if (year > 1900 && year < 2025){
+	if (year < 1900 && year > 2025){
 		printf("Nam sinh khong hop le.");
 	}else{
 		tuoi = 2025 - year;
@@ -25,5 +25,6 @@ int main(){
 		}
 	}
 }
+
 
 
