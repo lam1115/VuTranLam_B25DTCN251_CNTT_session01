@@ -1,24 +1,14 @@
 #include <stdio.h>
-#include <math.h>
-int ucln(int a, int b){
-	if(a == 0 || b == 0){
-		return a + b;
-	}
-	while(a != b){
-		if(a > b){
-			a = a - b;
-		}else{
-			b = b - a;
-		}
-	}
-	return a;
-}
-int bcnn(int a, int b){
-	return a * b / ucln(a , b);
-}
 int main(){
-	int a, b;
+	int a, b, s, t;
 	printf("Nhap 2 so nguyen: ");
 	scanf("%d%d", &a, &b);
-	printf("%d", bcnn(a, b));
+	s = a;
+	t = b;
+	while(b != 0){
+		int temp = b;
+		b = a % b;
+		a = temp;
+	}
+	printf("BCNN: %d", (s * t)/a);
 }
