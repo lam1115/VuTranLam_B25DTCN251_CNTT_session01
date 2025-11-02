@@ -4,7 +4,7 @@ int main(){
 	int choose;
 	int arr[100];
 	int n = 0;
-	int x, y, z;
+	int x;
 	int kieuchen;
 	int vtri;
 	int value;
@@ -77,21 +77,21 @@ int main(){
 				break;
 			case 2:
 				printf("Nhap vi tri can xoa: ");
-				scanf("%d", &z);
-				for (int i = z; i < n - 1; i++){
+				scanf("%d", &x);
+				for (int i = x; i < n - 1; i++){
 					arr[i] = arr[i + 1];
 				}
 				n --;
 				break;
 			case 3:
 				printf("Nhap gia tri can thay the: ");
-				scanf("%d", &y);
+				scanf("%d", &x);
 				printf("Chon vi tri can thay the: ");
 				scanf("%d", &vtri);
 				if(vtri > 0 && vtri < n){
 					for (int i = 0; i < vtri; i++){
 						if (arr[i] == arr[vtri]){
-							arr[vtri] = y;
+							arr[vtri] = x;
 						}
 					}
 				}else{
@@ -130,35 +130,3 @@ int main(){
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
