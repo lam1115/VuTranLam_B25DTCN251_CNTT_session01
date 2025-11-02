@@ -109,7 +109,7 @@ int main(){
 				printf("Gia tri %d xuat hien %d lan.", value, found);
 				if(found > 0){
 					printf("\nTai cac vi tri: \n");
-					for(int j = 0; j > n; j ++){
+					for(int j = 0; j < n; j ++){
 						if(arr[j] == value){
 							printf("%5d", j);
 						}
@@ -130,6 +130,7 @@ int main(){
 		}
 	}
 }
+
 
 
 
