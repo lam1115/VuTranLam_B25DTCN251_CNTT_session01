@@ -101,7 +101,7 @@ int main(){
 			case 4:
 				printf("Nhap gia tri can tim: ");
 				scanf("%d", &value);
-				for (int i = n; i > 0; i--){
+				for (int i = 0; i < n; i ++){
 					if(arr[i] == value){
 						found ++;
 					}
@@ -130,3 +130,4 @@ int main(){
 		}
 	}
 }
+
