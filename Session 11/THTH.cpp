@@ -145,7 +145,7 @@ int main(){
 							}
 						}
 					}else{
-						int left = 0l, right = n - 1;
+						int left = 0, right = n - 1;
 						while (left <= right){
 							int mid = (left + right)/2;
 							if (arr[mid] < value){
@@ -255,4 +255,5 @@ int main(){
         } while (!check);
 	}while(1);
 }
+
 
