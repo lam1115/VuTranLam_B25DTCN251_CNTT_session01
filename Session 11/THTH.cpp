@@ -100,7 +100,7 @@ int main(){
 								}
 							}
 							isSorted = 1;
-							printf("Mang tang dan: ");
+							printf("Mang giam dan: ");
 							for (int i = 0; i < n; i++){
 								printf("%d ", arr[i]);
 							}
@@ -255,5 +255,6 @@ int main(){
         } while (!check);
 	}while(1);
 }
+
 
 
